@@ -1,13 +1,223 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.dashboard {
+    background: url("./images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 100%;
+}
+
+.site-header {
+    height: 50px;
+    background: rgba(0, 0, 0, .65);
+}
+
+.site-search {
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.site-search form input {
+    width: 250px;
+    background: rgba(0,0,0,0);
+    border: none;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.site-search form input::placeholder {
+    color: white;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.site-search input[type=text]:focus, textarea:focus {
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.site-header .site-search {
+    background: rgba(255, 255, 255, .35);
+    width: 300px;
+}
+
+.site-search .search-button {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    background: rgba(0,0,0,0);
+    width: 50px;
+    border: none;
+}
+
+.greeting-section {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    color: white;
+    text-align: center;
+}
+
+.greeting-section .location {
+    font-size: 40px;
+    letter-spacing: .12em;
+    margin: 0;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.greeting-section .greeting, .greeting-section .time {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.greeting-section .greeting {
+    font-size: 100px;
+    line-height: 100px;
+    margin: 0;
+}
+
+.greeting-section .time {
+    font-size: 65px;
+    margin: 0;
+    line-height: 65px;
+}
+
+.card-section {
+    height: 690px;
+    color: white;
+    justify-content: space-between;
+}
+
+.card-section .card-header {
+    height: 50px;
+    background: rgba(0, 0, 0, .30);
+    width: 100%;
+}
+
+.card-section .bold {
+    font-size: 25px;
+    line-height: 25px;
+}
+
+.card-section .sub-text {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.card-section .current-section {
+    flex-basis: 40%;
+}
+
+.current-section .current-forecast-container {
+    width: 100%;
+}
+
+.current-section .current-forecast-container .today-forecast-card {
+    background: rgba(0, 0, 0, .25);
+    width: 50%;
+    margin-right: 20px;
+}
+
+.card-section .future-section {
+    flex-basis: 55%;
+}
+
+.card-section .future-section .future-forecast-container {
+    flex-basis: 20%;
+    margin-left: 20px;
+}
+
+.future-forecast-card {
+    background: rgba(0, 0, 0, .25);
+    width: 100%;
+}
+
+.today-forecast-card .weather-icon {
+    height: 250px;
+}
+
+.weather-icon {
+    text-align: center;
+    height: 150px;
+}
+
+.today-weather .weather-icon img {
+    height: 200px;
+    width: 200px;
+}
+
+.today-weather .summary {
+
+}
+
+.weather-icon img {
+    width: 50%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.predicted-weather-content {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.max-temp {
+    font-size: 35px;
+}
+
+.min-temp {
+    font-size: 25px;
+}
+
+.current-weather-card {
+    text-align: center;
+}
+
+.current-weather-card .current-temp-prompt {
+    font-size: 30px;
+}
+
+.current-weather-card .temp {
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    text-transform: bold;
+}
+
+.today-weather .summary {
+    font-size: 35px !important;
+    text-transform: lowercase;
+    margin: 0;
+    color: rgba(255, 255, 255, .7);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.predicted-weather-content .summary {
+    padding-left: 20px;
+    text-align: center;
+    padding-right: 20px;
+    font-size: 22px;
+    text-transform: lowercase;
+    margin-top: 40px;
+    color: rgba(255, 255, 255, .7);
+}
+
+.today-weather .predicted-weather-card .max-temp {
+    font-size: 50px;
 }
