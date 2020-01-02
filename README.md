@@ -19,6 +19,8 @@ You will also see any lint errors in the console.
 <ul>
   <li>Implement Reverse Geocoding to Dynamically Output Current User Location</li>
   <li>Implement Form to Allow User to Search Other Location Weather</li>
+  <li>Implement Autocomplete Location Search</li>
+  <li>Fix the Forecasted Day Issue</li>
 </ul>
 
 ### Eventual Improvements List:
