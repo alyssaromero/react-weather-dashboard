@@ -1,8 +1,5 @@
 ### Summary
-
-
-### Technologies Used
-
+I created this dashboard in order to learn the basics of ReactJS and to improve my existing frontend development skills. The project utlizes the DarkSky API for gathering weather data based on current location, OpenCage API for forward/reverse Geocoding for searching weather in other locations, as well as basic styling with CSS/SASS.
 
 ### Screenshots
 ![](src/images2/screenshot-dashboard.png)
@@ -17,15 +14,10 @@ You will also see any lint errors in the console.
 
 ### Current To-Do List:
 <ul>
-  <li>Implement Reverse Geocoding to Dynamically Output Current User Location</li>
-  <li>Implement Form to Allow User to Search Other Location Weather</li>
+  <li>Implement Reverse Geocoding for Location Search</li>
   <li>Implement Autocomplete Location Search</li>
-  <li>Fix the Forecasted Day Issue</li>
-</ul>
-
-### Eventual Improvements List:
-<ul>
-  <li>Improve UX Regarding Weather Cards</li>
-  <li>Implement the Ability to Add "Favorite" Locations</li>
-  <li>Expand Output Weather Images and Improve Summaries</li>
+  <li>Fix the Forecasted Day "Bug"</li>
+  <li>Improve UX and Responsive Implementation</li>
+  <li>Implement Ability to Add "Favorite" Locations</li>
+  <li>Expand Output Weather Images and Imrpove Summaries<li>
 </ul>
